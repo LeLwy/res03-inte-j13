@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+html .d-none {
+  display: none;
+}
+html .home-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 3vh 1vw;
+  min-height: 45vh;
+}
+html .home-post > header > figure {
+  margin-bottom: 3vh;
+}
+html .home-post > header > figure > img {
+  max-width: 100%;
+}
+html .home-post > header > h3 {
+  font-size: 2rem;
+}
+html .home-post > section > h4 {
+  font-size: 1.3rem;
+  margin-bottom: 3vh;
+}
+html .home-post > section > p {
+  font-size: 1.1rem;
+}
+html .home-post > footer > a {
+  font-weight: bold;
+  color: #bb232e;
+  text-decoration: none;
+  border-bottom: 3px solid #bb232e;
+}
+html .home-post > footer > a:hover {
+  border-bottom: 1px solid #bb232e;
+}
+html .critique-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  min-height: 30vh;
+}
+html .critique-post > header > figure {
+  margin-bottom: 2vh;
+}
+html .critique-post > header > figure > img {
+  max-width: 100%;
+}
+html .critique-post > header > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+html .critique-post > section > h4 {
+  font-size: 1.1rem;
+  margin-bottom: 2vh;
+}
+html .critique-post > footer > a {
+  font-weight: bold;
+  color: #bb232e;
+  text-decoration: none;
+  border-bottom: 3px solid #bb232e;
+}
+html .critique-post > footer > a:hover {
+  border-bottom: 1px solid #bb232e;
+}
+html .title-section {
+  background-color: #bb232e;
+  padding: 2vh 0;
+}
+html .title-section > h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: center;
+}
+html > body > header {
+  background-color: #074b6b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20vh;
+}
+html > body > header > figure > img {
+  max-width: 5vw;
+}
+html > body > header > nav {
+  margin-left: 6vw;
+}
+html > body > header > nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+html > body > header > nav > ul > li {
+  margin-right: 6vw;
+}
+html > body > header > nav > ul > li > a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+html > body > header > nav > ul > li > a:hover {
+  border-bottom: 3px solid #bb232e;
+}
+html > body > footer {
+  background-color: #074b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0;
+}
+html > body > footer > h4 {
+  color: #ffffff;
+}
+html > body > footer > figure > img {
+  max-width: 3vw;
+}
+html > body > footer > p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html > body > footer > p > a {
+  color: #ffffff;
+}
+html > body#home > main #presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+html > body#home > main #presentation > section {
+  min-height: 50vh;
+}
+html > body#home > main #presentation > section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15vw;
+}
+html > body#home > main #presentation > section:first-of-type > h2 {
+  font-size: 6rem;
+  color: #bb232e;
+}
+html > body#home > main #presentation > section:first-of-type > p {
+  font-size: 3rem;
+  color: #bb232e;
+}
+html > body#home > main #presentation > section:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c2f42;
+}
+html > body#home > main #presentation > section:last-of-type > figure > img {
+  max-width: 25vw;
+}
+html > body#home > main #latest-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2vw;
+  padding: 10vh 10vw;
+  background-color: #bb232e;
+}
+html > body#home > main #latest-posts > h2 {
+  grid-column: 1/4;
+  color: #ffffff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+html > body#critiques > main {
+  padding-top: 3vh;
+}
+html > body#critiques > main > section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2vw;
+  grid-row-gap: 4vh;
+  padding: 10vh 10vw;
+}
+
+/*# sourceMappingURL=style.css.map */

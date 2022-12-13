@@ -1,0 +1,318 @@
+@import "vars";
+@import "reset";
+
+html{
+    
+    font-family: $mainFont;
+    font-size: 16px;
+    
+    .d-none{
+        
+        display: none;
+    }
+    
+    .home-post{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $white;
+        border-radius: 5px;
+        padding: 3vh 1vw;
+        min-height: 45vh;
+        
+        &>header{
+            
+            &>figure{
+                
+                margin-bottom: 3vh;
+                
+                &>img{
+                    
+                    max-width: 100%;
+                }
+            }
+            
+            &>h3{
+                
+                font-size: 2rem;
+            }
+        }
+        
+        &>section{
+            
+            &>h4{
+                
+                font-size: 1.3rem;
+                margin-bottom: 3vh;
+            }
+            
+            &>p{
+                
+                font-size: 1.1rem;
+            }
+        }
+        
+        &>footer{
+            
+            &>a{
+                
+                font-weight: bold;
+                color: $red;
+                text-decoration: none;
+                border-bottom: 3px solid $red;
+                
+                &:hover{
+                    
+                    border-bottom: 1px solid $red;
+                }
+            }
+        }
+    }
+    
+    .critique-post{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $white;
+        min-height: 30vh;
+        
+        &>header{
+            
+            &>figure{
+                
+                margin-bottom: 2vh;
+
+                &>img{
+                    
+                    max-width: 100%;
+                }
+            }
+            
+            &>h3{
+                
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 2vh;
+            }
+        }
+        
+        &>section{
+            
+            &>h4{
+                
+                font-size: 1.1rem;
+                margin-bottom: 2vh;
+            }
+        }
+        
+        &>footer{
+            
+            &>a{
+                
+                font-weight: bold;
+                color: $red;
+                text-decoration: none;
+                border-bottom: 3px solid $red;
+                
+                &:hover{
+                    
+                    border-bottom: 1px solid $red;
+                }
+            }
+        }
+    }
+    
+    .title-section{
+        
+        background-color: $red;
+        padding: 2vh 0;
+        
+        &>h2{
+            
+            color: $white;
+            font-weight: bold;
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+    
+    &>body{
+        
+        &>header{
+            
+            background-color: $blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 20vh;
+            
+            &>figure{
+                
+                &>img{
+                    
+                    max-width: 5vw;
+                }
+            }
+            
+            &>nav{
+                
+                margin-left: 6vw;
+                
+                &>ul{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    
+                    &>li{
+                        
+                        margin-right: 6vw;
+                        
+                        &>a{
+                            
+                            color: $white;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            
+                            &:hover{
+                                
+                                border-bottom: 3px solid $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &>footer{
+            
+            background-color: $blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2vh 0;
+            
+            &>h4{
+                
+                color: $white;
+            }
+            
+            &>figure{
+                
+                &>img{
+                    
+                    max-width: 3vw;
+                }
+            }
+            
+            &>p{
+                
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: bold;
+                
+                &>a{
+                    
+                    color: $white;
+                }
+            }
+            
+        }
+            
+        &#home{
+            
+            &>main{
+                
+                #presentation{
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    
+                    &>section{
+                        
+                        min-height: 50vh;
+                        
+                        &:first-of-type{
+                            
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 15vw;
+                            
+                            &>h2{
+                                
+                                font-size: 6rem;
+                                color: $red;
+                            }
+                            
+                            &>p{
+                                
+                                font-size: 3rem;
+                                color: $red;
+                            }
+                        }
+                        
+                        &:last-of-type{
+                            
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $deepBlue;
+                            
+                            &>figure{
+                                
+                                &>img{
+                                    
+                                    max-width: 25vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                #latest-posts{
+                    
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-column-gap: 2vw;
+                    padding: 10vh 10vw;
+                    background-color: $red;
+                    
+                    &>h2{
+                        
+                        grid-column: 1/4;
+                        color: $white;
+                        font-size: 3.5rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-bottom: 6vh;
+                    }
+                }
+            }
+        }
+                
+            
+        &#critiques{
+            
+            &>main{
+                
+                padding-top: 3vh;
+                
+                &>section:last-of-type{
+                    
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-column-gap: 2vw;
+                    grid-row-gap: 4vh;
+                    padding: 10vh 10vw;
+                }
+            }
+        }
+        
+        &#equipe{
+            
+        }
+    }
+}
