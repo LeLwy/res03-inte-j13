@@ -257,6 +257,8 @@ html > body#equipe > main > section:last-of-type {
 }
 html > body#equipe > main > section:last-of-type > .team-member {
   background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 html > body#equipe > main > section:last-of-type > .team-member > header {
   margin-bottom: 2vh;
