@@ -83,6 +83,7 @@ html .home-post > section > h4 {
 }
 html .home-post > section > p {
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 html .home-post > footer > a {
   font-weight: bold;
@@ -139,10 +140,10 @@ html > body > header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
 html > body > header > figure > img {
-  max-width: 5vw;
+  max-width: 4vw;
 }
 html > body > header > nav {
   margin-left: 6vw;
@@ -152,11 +153,11 @@ html > body > header > nav > ul {
   flex-direction: row;
 }
 html > body > header > nav > ul > li {
-  margin-right: 6vw;
+  margin-right: 10vw;
 }
 html > body > header > nav > ul > li > a {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -195,7 +196,7 @@ html > body#home > main #presentation > section:first-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 15vw;
+  padding: 0 5vw;
 }
 html > body#home > main #presentation > section:first-of-type > h2 {
   font-size: 6rem;
@@ -203,6 +204,8 @@ html > body#home > main #presentation > section:first-of-type > h2 {
 }
 html > body#home > main #presentation > section:first-of-type > p {
   font-size: 3rem;
+}
+html > body#home > main #presentation > section:first-of-type > p > span {
   color: #bb232e;
 }
 html > body#home > main #presentation > section:last-of-type {
@@ -238,6 +241,57 @@ html > body#critiques > main > section:last-of-type {
   grid-column-gap: 2vw;
   grid-row-gap: 4vh;
   padding: 10vh 10vw;
+}
+html > body#equipe > main {
+  padding-top: 6vh;
+  background-image: url("https://res03.sites.3wa.io/assets/files/inte/j13/cinepotes/assets/img/friends.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+html > body#equipe > main > section:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4vw;
+  grid-row-gap: 4vh;
+  padding: 10vh 10vw;
+}
+html > body#equipe > main > section:last-of-type > .team-member {
+  background-color: #ffffff;
+}
+html > body#equipe > main > section:last-of-type > .team-member > header {
+  margin-bottom: 2vh;
+}
+html > body#equipe > main > section:last-of-type > .team-member > header > figure > img {
+  max-width: 100%;
+}
+html > body#equipe > main > section:last-of-type > .team-member > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1vw;
+}
+html > body#equipe > main > section:last-of-type > .team-member > section > h4 {
+  font-size: 1.8rem;
+  margin-bottom: 2vh;
+}
+html > body#equipe > main > section:last-of-type > .team-member > section > h5 {
+  font-size: 1.4rem;
+  margin-bottom: 2vh;
+}
+html > body#equipe > main > section:last-of-type > .team-member > section > p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+html > body#equipe > main > section:last-of-type > .team-member#clark-card {
+  color: #186e57;
+}
+html > body#equipe > main > section:last-of-type > .team-member#lois-card {
+  color: #6e24b7;
+}
+html > body#equipe > main > section:last-of-type > .team-member#kent-card {
+  color: #074b6b;
 }
 
 /*# sourceMappingURL=style.css.map */
