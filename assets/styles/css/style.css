@@ -68,6 +68,9 @@ html .home-post {
   padding: 3vh 1vw;
   min-height: 45vh;
 }
+html .home-post > header {
+  margin-bottom: 3vh;
+}
 html .home-post > header > figure {
   margin-bottom: 3vh;
 }
@@ -85,7 +88,11 @@ html .home-post > section > p {
   font-size: 1.1rem;
   line-height: 1.5;
 }
+html .home-post > footer {
+  padding-top: 2vh;
+}
 html .home-post > footer > a {
+  padding-bottom: 0.5rem;
   font-weight: bold;
   color: #bb232e;
   text-decoration: none;
@@ -117,6 +124,7 @@ html .critique-post > section > h4 {
   margin-bottom: 2vh;
 }
 html .critique-post > footer > a {
+  padding-bottom: 0.5rem;
   font-weight: bold;
   color: #bb232e;
   text-decoration: none;
@@ -156,6 +164,7 @@ html > body > header > nav > ul > li {
   margin-right: 10vw;
 }
 html > body > header > nav > ul > li > a {
+  padding-bottom: 0.5rem;
   color: #ffffff;
   font-size: 1.3rem;
   text-transform: uppercase;
